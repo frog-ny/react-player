@@ -15,7 +15,7 @@ const DASH_GLOBAL = 'dashjs'
 const MATCH_DROPBOX_URL = /www\.dropbox\.com\/.+/
 
 function isMediaStream (url) {
-  return typeof window !== 'undefined' && url instanceof window.MediaStream
+  return typeof window.MediaStream !== 'undefined' && url instanceof window.MediaStream
 }
 
 function canPlay (url) {
